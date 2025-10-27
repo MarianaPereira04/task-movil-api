@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin(origins = "http://localhost:8100") // permite que tu app móvil se conecte sin errores CORS
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8100"}) // permite que tu app móvil se conecte sin errores CORS
 public class ProductController {
 
     private final ProductService service;

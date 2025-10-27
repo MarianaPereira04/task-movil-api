@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/categories")
-@CrossOrigin(origins = "http://localhost:8100") // <- permite conexión desde tu app móvil
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8100"}) // <- permite conexión desde tu app móvil
 public class CategoryController {
 
     private final CategoryService service;
