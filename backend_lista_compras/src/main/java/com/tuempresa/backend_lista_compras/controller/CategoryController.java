@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/category")
-@CrossOrigin(origins = "*") // <- permite conexión desde tu app móvil
+@RequestMapping("/api/categories")
+@CrossOrigin(origins = "http://localhost:8100") // <- permite conexión desde tu app móvil
 public class CategoryController {
 
     private final CategoryService service;
